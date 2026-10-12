@@ -1,3 +1,5 @@
+export const maxDuration = 60; // 核心改动：允许 Vercel 等待最长 60 秒
+
 export default async function handler(req, res) {
   const path = req.query.path;
   const key = req.query.key;
